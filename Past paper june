@@ -22,10 +22,6 @@ elif character.digit:
 
 elif character in "!%&*+=":
         Score += 10
-else:
-    print("Invalid character.")
-
-break
 
     print("Password score:", Score.)
 
