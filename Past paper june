@@ -7,3 +7,39 @@ if Password >= MINIMUM and <= MAXIMUM:
     print("Password is vaild")
 else:
     Print("Password must be between 8 and 15 Characters")
+
+Score = 0
+
+for character in Password:
+    if character.lower:
+        Score += 5
+
+elif character.upper:
+    Score += 5
+
+elif character.digit:
+    Score += 10
+
+elif character in "!%&*+=":
+        Score += 10
+else:
+    print("Invalid character")
+
+break
+
+    print("Password score:", Score)
+
+    if Score <= 20:
+        print("Security rating: Very low")
+
+    elif Score <= 40:
+        print("Security rating: Low")
+
+    elif Score <= 70:
+        print("Security rating: Medium")
+
+    elif Score <= 80:
+        print("Security rating: High")
+
+    else:
+        print("Security rating: Very high")
