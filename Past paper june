@@ -4,9 +4,9 @@ MAXIMUM = 15
 Password = int(input("enter Password: "))
 
 if Password >= MINIMUM and <= MAXIMUM:
-    print("Password is vaild")
+    print("Password is vaild.")
 else:
-    Print("Password must be between 8 and 15 Characters")
+    Print("Password must be between 8 and 15 Characters.")
 
 Score = 0
 
@@ -23,23 +23,23 @@ elif character.digit:
 elif character in "!%&*+=":
         Score += 10
 else:
-    print("Invalid character")
+    print("Invalid character.")
 
 break
 
-    print("Password score:", Score)
+    print("Password score:", Score.)
 
     if Score <= 20:
-        print("Security rating: Very low")
+        print("Security rating: Very low.")
 
     elif Score <= 40:
-        print("Security rating: Low")
+        print("Security rating: Low.")
 
     elif Score <= 70:
-        print("Security rating: Medium")
+        print("Security rating: Medium.")
 
     elif Score <= 80:
-        print("Security rating: High")
+        print("Security rating: High.")
 
     else:
-        print("Security rating: Very high")
+        print("Security rating: Very high.")
